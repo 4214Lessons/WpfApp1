@@ -173,10 +173,24 @@
             </Grid.RowDefinitions>
 
 
-            <Button Click="Button_Click" Background="Green" Grid.Column="0" Grid.Row="0"></Button>
+            <Button Click="Button_Click1" Background="Green" Grid.Column="0" Grid.Row="0"></Button>
             <Button Background="Blue" Grid.Column="1" Grid.Row="0"></Button>
             <Button Background="Red" Grid.Column="1" Grid.Row="1"></Button>
             <Button Background="Yellow" Grid.Column="0" Grid.Row="1"></Button>
+
+            <x:Code>
+                
+            <![CDATA[
+            
+            private void Button_Click1(object sender, RoutedEventArgs e)
+            {
+                MessageBoxResult result =  MessageBox.Show("Button_Click1","caption", MessageBoxButton.OKCancel, MessageBoxImage.Information);
+            }
+            
+            ]]>
+
+            </x:Code>
+
         </Grid>
 
 
