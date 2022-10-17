@@ -1,0 +1,184 @@
+﻿<!--<Window x:Class="Source.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Source"
+        mc:Ignorable="d"
+        Title="Intro" Height="450" Width="800">
+    <Grid>
+        <Button 
+            Margin="50 10"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Padding="0"
+            Background="YellowGreen"
+            Foreground="WhiteSmoke"
+            FontSize="80"
+            >Click me
+        </Button>
+
+        <Button 
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            Background="YellowGreen"
+            Foreground="WhiteSmoke"
+            FontSize="25"
+            >(   )
+        </Button>
+
+        <Button 
+            VerticalAlignment="Top"
+            HorizontalAlignment="Right"
+            Background="YellowGreen"
+            Foreground="WhiteSmoke"
+            FontSize="25"
+            >(   )
+        </Button>
+
+        <Button 
+            VerticalAlignment="Top"
+            HorizontalAlignment="Center"
+            Background="YellowGreen"
+            Foreground="WhiteSmoke"
+            FontSize="25"
+            >(   )
+        </Button>
+
+
+
+        <Button 
+            VerticalAlignment="Bottom"
+            HorizontalAlignment="Left"
+            Background="YellowGreen"
+            Foreground="WhiteSmoke"
+            FontSize="25"
+            >(   )
+        </Button>
+
+        <Button 
+            VerticalAlignment="Bottom"
+            HorizontalAlignment="Right"
+            Padding="0"
+            Background="YellowGreen"
+            Foreground="WhiteSmoke"
+            FontSize="25"
+            >(   )
+        </Button>
+
+        <Button 
+            VerticalAlignment="Bottom"
+            HorizontalAlignment="Center"
+            Padding="0"
+            Background="YellowGreen"
+            Foreground="WhiteSmoke"
+            FontSize="25"
+            >(   )
+        </Button>
+    </Grid>
+</Window>-->
+
+
+
+
+
+<!--<Window x:Class="Source.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Source"
+        mc:Ignorable="d"
+        Title="Intro" Height="450" Width="800">
+    <Grid>
+        <Button Name="btn_click"
+            Foreground="White"
+            Background="YellowGreen"
+            FontSize="72"
+            BorderThickness="10"
+            BorderBrush="#FF1046CA"
+            FontFamily="Arial"
+            FontStyle="Oblique"
+            FontWeight="UltraBold"
+            Visibility="Visible"
+            Cursor="Hand">
+            Hello WPF
+        </Button>
+    </Grid>
+</Window>-->
+
+
+
+
+
+
+<!--<Window x:Class="Source.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Source"
+        mc:Ignorable="d"
+        Title="Intro" Height="450" Width="800">
+    <Grid>
+        <Button>
+            <Button.Background>
+                Red
+            </Button.Background>
+
+            <Button.FontSize>
+                80
+            </Button.FontSize>
+        </Button>
+    </Grid>
+</Window>-->
+
+
+
+
+<Window x:Class="Source.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Source"
+        mc:Ignorable="d"
+        Title="Intro" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid x:Name="container">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+        <Grid Grid.Column="2" Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+
+            <Button Click="Button_Click" Background="Green" Grid.Column="0" Grid.Row="0"></Button>
+            <Button Background="Blue" Grid.Column="1" Grid.Row="0"></Button>
+            <Button Background="Red" Grid.Column="1" Grid.Row="1"></Button>
+            <Button Background="Yellow" Grid.Column="0" Grid.Row="1"></Button>
+        </Grid>
+
+
+    </Grid>
+</Window>
